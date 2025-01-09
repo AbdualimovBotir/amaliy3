@@ -38,8 +38,8 @@ def transform_text(text):
     return " ".join(y)  # Olingan so'zlarni birlashtirish va qaytarish
 
 # Model va vektorizerni yuklash (models papkasi ichida joylashgan)
-tfidf = pickle.load(open('models/vectorizer2.pkl', 'rb'))  # Vektorizerni yuklash
-model = pickle.load(open('models/model2.pkl', 'rb'))  # Modelni yuklash
+tfidf = pickle.load(open('vectorizer2.pkl', 'rb'))  # Vektorizerni yuklash
+model = pickle.load(open('model2.pkl', 'rb'))  # Modelni yuklash
 
 # Streamlit interfeysi
 st.title("Email/SMS Spam Classifier")
